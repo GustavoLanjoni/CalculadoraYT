@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta tag para definir o conjunto de caracteres como UTF-8 -->
+  <meta charset="UTF-8">
+  
+  <!-- Meta tag para garantir que o site seja responsivo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título da página exibido na aba do navegador -->
+  <title>Calculadora Moderna</title>
+  
+  <!-- Link para o arquivo de estilo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Contêiner principal da calculadora -->
+  <div class="calculadora">
+    
+    <!-- Seção da tela onde o resultado é exibido -->
+    <div class="tela">
+      <!-- Campo de entrada de texto desativado, usado apenas para exibir valores -->
+      <input type="text" id="resultado" disabled placeholder="0">
+    </div>
+    
+    <!-- Seção que contém os botões da calculadora -->
+    <div class="botoes">
+      <!-- Botão para limpar todos os valores -->
+      <button onclick="limpar()" class="limpar">C</button>
+      
+      <!-- Botão para o operador de porcentagem -->
+      <button onclick="operar('%')">%</button>
+      
+      <!-- Botão para o operador de divisão -->
+      <button onclick="operar('/')">÷</button>
+      
+      <!-- Botão para o operador de multiplicação -->
+      <button onclick="operar('*')">×</button>
+      
+      <!-- Botões numéricos -->
+      <button onclick="adicionarValor('7')">7</button>
+      <button onclick="adicionarValor('8')">8</button>
+      <button onclick="adicionarValor('9')">9</button>
+      
+      <!-- Botão para o operador de subtração -->
+      <button onclick="operar('-')">−</button>
+      
+      <!-- Botões numéricos -->
+      <button onclick="adicionarValor('4')">4</button>
+      <button onclick="adicionarValor('5')">5</button>
+      <button onclick="adicionarValor('6')">6</button>
+      
+      <!-- Botão para o operador de adição -->
+      <button onclick="operar('+')">+</button>
+      
+      <!-- Botões numéricos -->
+      <button onclick="adicionarValor('1')">1</button>
+      <button onclick="adicionarValor('2')">2</button>
+      <button onclick="adicionarValor('3')">3</button>
+      
+      <!-- Botão para calcular o resultado -->
+      <button onclick="calcular()" class="igual">=</button>
+      
+      <!-- Botão para o número 0 com uma largura maior -->
+      <button onclick="adicionarValor('0')" class="zero">0</button>
+      
+      <!-- Botão para adicionar um ponto decimal -->
+      <button onclick="adicionarValor('.')">.</button>
+    </div>
+  </div>
+
+  <!-- Link para o arquivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
